@@ -7,10 +7,11 @@ include: "/views/*.view.lkml"                # include all views in the views/ f
 # # Select the views that should be a part of this model,
 # # and define the joins that connect them together.
 #
-explore: deals_dolar {
+explore: deals {
+  from: deals_dolar
   join: activities {
     relationship: one_to_many
-    sql_on: ${deals_dolar.id} = ${activities.deal_id} ;;
+    sql_on: ${deals.id} = ${activities.deal_id} ;;
   }
 
 #   join: users {
@@ -18,3 +19,8 @@ explore: deals_dolar {
 #     sql_on: ${users.id} = ${orders.user_id} ;;
 #   }
 }
+# explore: deals_dolar {
+#   join: activities {
+#     relationship: one_to_many
+#     sql_on: ${deals_dolar.id} = ${activities.deal_id} ;;
+#   }
