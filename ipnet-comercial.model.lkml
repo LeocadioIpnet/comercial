@@ -8,16 +8,18 @@ include: "/views/*.view.lkml"                # include all views in the views/ f
 # # and define the joins that connect them together.
 #
 explore: deals {
+
   from: deals_dolar
+
   join: activities {
     relationship: one_to_many
     sql_on: ${deals.id} = ${activities.deal_id} ;;
   }
 
-#   join: users {
-#     relationship: many_to_one
-#     sql_on: ${users.id} = ${orders.user_id} ;;
-#   }
+  join: users {
+    relationship: many_to_one
+    sql_on: ${deals.user_id_id} = ${users.id} ;;
+   }
 }
 # explore: deals_dolar {
 #   join: activities {
