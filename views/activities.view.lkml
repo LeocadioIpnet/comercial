@@ -4,6 +4,7 @@ view: activities {
   drill_fields: [id]
 
   dimension: id {
+    label: "id da atividade"
     primary_key: yes
     type: number
     sql: ${TABLE}.id ;;
@@ -31,7 +32,7 @@ view: activities {
   }
 
   dimension: done {
-    label: "feito (yes/no)"
+    label: "feito"
     type: yesno
     sql: ${TABLE}.done ;;
   }
@@ -57,6 +58,14 @@ view: activities {
     type: string
     sql: ${TABLE}.marked_as_done_time ;;
   }
+
+  dimension: marked_as_done_time_resolved {
+    hidden: no
+    label: "data em que foi marcada como feito"
+    type: date_time
+    sql: CAST(REPLACE(${TABLE}.marked_as_done_time,'*','') AS date_time) ;;
+  }
+
 
   dimension: org_name {
     label: "cliente associado a atividade"
