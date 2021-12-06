@@ -62,8 +62,9 @@ view: activities {
   dimension: marked_as_done_time_resolved {
     hidden: no
     label: "data tentativa"
-    type: string
-    sql: REPLACE(${TABLE}.marked_as_done_time,'*','') ;;
+    # CAST(SUBSTR(REPLACE(marked_as_done_time,'*',''),1,10) AS date)
+    # type: string
+    sql: CAST(SUBSTR(REPLACE(${TABLE}.marked_as_done_time,'*',''),1,10) AS DATE) ;;
   }
 
 
