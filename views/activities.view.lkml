@@ -61,8 +61,8 @@ view: activities {
 
   dimension: marked_as_done_time_resolved {
     hidden: no
-    label: "data em que foi marcada como feito"
-    type: date
+    label: "data tentativa"
+    type: string
     sql: REPLACE(${TABLE}.marked_as_done_time,'*','') ;;
   }
 
