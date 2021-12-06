@@ -63,8 +63,9 @@ view: activities {
     hidden: no
     label: "data tentativa"
     # CAST(SUBSTR(REPLACE(marked_as_done_time,'*',''),1,10) AS date)
+    # PARSE_DATE("%Y-%m-%d",SUBSTR(REPLACE(${TABLE}.marked_as_done_time,'*',''),1,11))
     # type: string
-    sql: CAST(SUBSTR(REPLACE(${TABLE}.marked_as_done_time,'*',''),1,10) AS DATE) ;;
+    sql: PARSE_DATE("%Y-%m-%d",SUBSTR(REPLACE(${TABLE}.marked_as_done_time,'*',''),1,11)) ;;
   }
 
 
