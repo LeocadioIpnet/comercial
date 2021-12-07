@@ -21,6 +21,19 @@ explore: deals {
     sql_on: ${deals.user_id_id} = ${users.id} ;;
    }
 }
+
+explore: activities {
+
+  from: activities_view
+
+  join: users {
+    relationship: many_to_one
+    sql_on: ${activities.user_id} = ${users.id} ;;
+  }
+  }
+
+explore: sc_venda_dash {from: sc_venda_dash}
+
 # explore: deals_dolar {
 #   join: activities {
 #     relationship: one_to_many
