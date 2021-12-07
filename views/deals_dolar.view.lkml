@@ -9,55 +9,55 @@ view: deals_dolar {
     sql: ${TABLE}.id ;;
   }
 
-  dimension: _05ff4f4c0aaded303d676417a921c82fdbe053f4 {
-    type: number
-    sql: ${TABLE}._05ff4f4c0aaded303d676417a921c82fdbe053f4 ;;
-  }
+  # dimension: _05ff4f4c0aaded303d676417a921c82fdbe053f4 {
+  #   type: number
+  #   sql: ${TABLE}._05ff4f4c0aaded303d676417a921c82fdbe053f4 ;;
+  # }
 
-  dimension: _10dd60f0c278f97a4465baefd1781a5502d25417 {
-    type: number
-    sql: ${TABLE}._10dd60f0c278f97a4465baefd1781a5502d25417 ;;
-  }
+  # dimension: _10dd60f0c278f97a4465baefd1781a5502d25417 {
+  #   type: number
+  #   sql: ${TABLE}._10dd60f0c278f97a4465baefd1781a5502d25417 ;;
+  # }
 
-  dimension: _343013a8d954975f9ec96bbb629c4c1342d7816e {
-    type: number
-    sql: ${TABLE}._343013a8d954975f9ec96bbb629c4c1342d7816e ;;
-  }
+  # dimension: _343013a8d954975f9ec96bbb629c4c1342d7816e {
+  #   type: number
+  #   sql: ${TABLE}._343013a8d954975f9ec96bbb629c4c1342d7816e ;;
+  # }
 
-  dimension: _5fdae67f523b8833a32a8b72d236ad80080bf025 {
-    type: number
-    sql: ${TABLE}._5fdae67f523b8833a32a8b72d236ad80080bf025 ;;
-  }
+  # dimension: _5fdae67f523b8833a32a8b72d236ad80080bf025 {
+  #   type: number
+  #   sql: ${TABLE}._5fdae67f523b8833a32a8b72d236ad80080bf025 ;;
+  # }
 
-  dimension: _67f6deb9218a021a99492bcf687ba4873ff24025 {
-    type: number
-    sql: ${TABLE}._67f6deb9218a021a99492bcf687ba4873ff24025 ;;
-  }
+  # dimension: _67f6deb9218a021a99492bcf687ba4873ff24025 {
+  #   type: number
+  #   sql: ${TABLE}._67f6deb9218a021a99492bcf687ba4873ff24025 ;;
+  # }
 
-  dimension: _982011322a112c3b26859d637437cd916276d75a {
-    type: string
-    sql: ${TABLE}._982011322a112c3b26859d637437cd916276d75a ;;
-  }
+  # dimension: _982011322a112c3b26859d637437cd916276d75a {
+  #   type: string
+  #   sql: ${TABLE}._982011322a112c3b26859d637437cd916276d75a ;;
+  # }
 
-  dimension: _9ee91392b7dde8454f980ad3a87961fb8bf1aa6a {
-    type: string
-    sql: ${TABLE}._9ee91392b7dde8454f980ad3a87961fb8bf1aa6a ;;
-  }
+  # dimension: _9ee91392b7dde8454f980ad3a87961fb8bf1aa6a {
+  #   type: string
+  #   sql: ${TABLE}._9ee91392b7dde8454f980ad3a87961fb8bf1aa6a ;;
+  # }
 
-  dimension: aa6d2f932192ab759d189c2835a01041a8513671 {
-    type: number
-    sql: ${TABLE}.aa6d2f932192ab759d189c2835a01041a8513671 ;;
-  }
+  # dimension: aa6d2f932192ab759d189c2835a01041a8513671 {
+  #   type: number
+  #   sql: ${TABLE}.aa6d2f932192ab759d189c2835a01041a8513671 ;;
+  # }
 
   dimension: active {
     type: yesno
     sql: ${TABLE}.active ;;
   }
 
-  dimension: activities_count {
-    type: number
-    sql: ${TABLE}.activities_count ;;
-  }
+  # dimension: activities_count {
+  #   type: number
+  #   sql: ${TABLE}.activities_count ;;
+  # }
 
   dimension_group: add {
     type: time
@@ -73,10 +73,10 @@ view: deals_dolar {
     sql: ${TABLE}.add_time ;;
   }
 
-  dimension: b7f5934604fb4362f590a150724780d18b5af9ab {
-    type: number
-    sql: ${TABLE}.b7f5934604fb4362f590a150724780d18b5af9ab ;;
-  }
+  # dimension: b7f5934604fb4362f590a150724780d18b5af9ab {
+  #   type: number
+  #   sql: ${TABLE}.b7f5934604fb4362f590a150724780d18b5af9ab ;;
+  # }
 
   dimension: campanha {
     type: string
@@ -149,15 +149,15 @@ view: deals_dolar {
     sql: ${TABLE}.dominio ;;
   }
 
-  dimension: done_activities_count {
-    type: number
-    sql: ${TABLE}.done_activities_count ;;
-  }
+  # dimension: done_activities_count {
+  #   type: number
+  #   sql: ${TABLE}.done_activities_count ;;
+  # }
 
-  dimension: email_messages_count {
-    type: number
-    sql: ${TABLE}.email_messages_count ;;
-  }
+  # dimension: email_messages_count {
+  #   type: number
+  #   sql: ${TABLE}.email_messages_count ;;
+  # }
 
   dimension_group: expected_close {
     type: time
@@ -174,10 +174,10 @@ view: deals_dolar {
     sql: ${TABLE}.expected_close_date ;;
   }
 
-  dimension: files_count {
-    type: number
-    sql: ${TABLE}.files_count ;;
-  }
+  # dimension: files_count {
+  #   type: number
+  #   sql: ${TABLE}.files_count ;;
+  # }
 
   dimension_group: first_won {
     type: time
@@ -193,10 +193,10 @@ view: deals_dolar {
     sql: ${TABLE}.first_won_time ;;
   }
 
-  dimension: followers_count {
-    type: number
-    sql: ${TABLE}.followers_count ;;
-  }
+  # dimension: followers_count {
+  #   type: number
+  #   sql: ${TABLE}.followers_count ;;
+  # }
 
   dimension: formatted_value {
     type: string
@@ -310,40 +310,40 @@ view: deals_dolar {
     sql: ${TABLE}.next_activity_date ;;
   }
 
-  dimension: next_activity_duration {
-    type: string
-    sql: ${TABLE}.next_activity_duration ;;
-  }
+  # dimension: next_activity_duration {
+  #   type: string
+  #   sql: ${TABLE}.next_activity_duration ;;
+  # }
 
-  dimension: next_activity_id {
-    type: number
-    sql: ${TABLE}.next_activity_id ;;
-  }
+  # dimension: next_activity_id {
+  #   type: number
+  #   sql: ${TABLE}.next_activity_id ;;
+  # }
 
-  dimension: next_activity_note {
-    type: string
-    sql: ${TABLE}.next_activity_note ;;
-  }
+  # dimension: next_activity_note {
+  #   type: string
+  #   sql: ${TABLE}.next_activity_note ;;
+  # }
 
-  dimension: next_activity_subject {
-    type: string
-    sql: ${TABLE}.next_activity_subject ;;
-  }
+  # dimension: next_activity_subject {
+  #   type: string
+  #   sql: ${TABLE}.next_activity_subject ;;
+  # }
 
-  dimension: next_activity {
-    type: string
-    sql: ${TABLE}.next_activity_time ;;
-  }
+  # dimension: next_activity {
+  #   type: string
+  #   sql: ${TABLE}.next_activity_time ;;
+  # }
 
-  dimension: next_activity_type {
-    type: string
-    sql: ${TABLE}.next_activity_type ;;
-  }
+  # dimension: next_activity_type {
+  #   type: string
+  #   sql: ${TABLE}.next_activity_type ;;
+  # }
 
-  dimension: notes_count {
-    type: number
-    sql: ${TABLE}.notes_count ;;
-  }
+  # dimension: notes_count {
+  #   type: number
+  #   sql: ${TABLE}.notes_count ;;
+  # }
 
   dimension: org_active_flag {
     type: yesno
@@ -384,15 +384,15 @@ view: deals_dolar {
     sql: ${TABLE}.org_cc_email ;;
   }
 
-  dimension: org_closed_deals_count {
-    type: number
-    sql: ${TABLE}.org_closed_deals_count ;;
-  }
+  # dimension: org_closed_deals_count {
+  #   type: number
+  #   sql: ${TABLE}.org_closed_deals_count ;;
+  # }
 
-  dimension: org_done_activities_count {
-    type: number
-    sql: ${TABLE}.org_done_activities_count ;;
-  }
+  # dimension: org_done_activities_count {
+  #   type: number
+  #   sql: ${TABLE}.org_done_activities_count ;;
+  # }
 
   dimension: org_id_value {
     type: number
@@ -420,20 +420,20 @@ view: deals_dolar {
     sql: ${TABLE}.org_last_activity_id ;;
   }
 
-  dimension: org_lost_deals_count {
-    type: number
-    sql: ${TABLE}.org_lost_deals_count ;;
-  }
+  # dimension: org_lost_deals_count {
+  #   type: number
+  #   sql: ${TABLE}.org_lost_deals_count ;;
+  # }
 
   dimension: org_name {
     type: string
     sql: ${TABLE}.org_name ;;
   }
 
-  dimension: org_open_deals_count {
-    type: number
-    sql: ${TABLE}.org_open_deals_count ;;
-  }
+  # dimension: org_open_deals_count {
+  #   type: number
+  #   sql: ${TABLE}.org_open_deals_count ;;
+  # }
 
   dimension: org_owner_id_active_flag {
     type: yesno
@@ -466,25 +466,25 @@ view: deals_dolar {
     sql: ${TABLE}.org_owner_name ;;
   }
 
-  dimension: org_people_count {
-    type: number
-    sql: ${TABLE}.org_people_count ;;
-  }
+  # dimension: org_people_count {
+  #   type: number
+  #   sql: ${TABLE}.org_people_count ;;
+  # }
 
-  dimension: org_won_deals_count {
-    type: number
-    sql: ${TABLE}.org_won_deals_count ;;
-  }
+  # dimension: org_won_deals_count {
+  #   type: number
+  #   sql: ${TABLE}.org_won_deals_count ;;
+  # }
 
   dimension: origem {
     type: string
     sql: ${TABLE}.origem ;;
   }
 
-  dimension: participants_count {
-    type: number
-    sql: ${TABLE}.participants_count ;;
-  }
+  # dimension: participants_count {
+  #   type: number
+  #   sql: ${TABLE}.participants_count ;;
+  # }
 
   dimension: partner_advantage {
     type: string
@@ -532,10 +532,10 @@ view: deals_dolar {
     sql: ${TABLE}.probability ;;
   }
 
-  dimension: products_count {
-    type: number
-    sql: ${TABLE}.products_count ;;
-  }
+  # dimension: products_count {
+  #   type: number
+  #   sql: ${TABLE}.products_count ;;
+  # }
 
   dimension: renewal_type {
     type: string
@@ -581,10 +581,10 @@ view: deals_dolar {
     sql: ${TABLE}.title ;;
   }
 
-  dimension: undone_activities_count {
-    type: number
-    sql: ${TABLE}.undone_activities_count ;;
-  }
+  # dimension: undone_activities_count {
+  #   type: number
+  #   sql: ${TABLE}.undone_activities_count ;;
+  # }
 
   dimension_group: update {
     type: time
@@ -637,25 +637,25 @@ view: deals_dolar {
     sql: ${TABLE}.user_id_value ;;
   }
 
-  dimension: valor_normatizado {
-    type: number
-    sql: ${TABLE}.valor_normatizado ;;
-  }
+  # dimension: valor_normatizado {
+  #   type: number
+  #   sql: ${TABLE}.valor_normatizado ;;
+  # }
 
-  dimension: value {
-    type: number
-    sql: ${TABLE}.value ;;
-  }
+  # dimension: value {
+  #   type: number
+  #   sql: ${TABLE}.value ;;
+  # }
 
   dimension: visible_to {
     type: number
     sql: ${TABLE}.visible_to ;;
   }
 
-  dimension: weighted_value {
-    type: number
-    sql: ${TABLE}.weighted_value ;;
-  }
+  # dimension: weighted_value {
+  #   type: number
+  #   sql: ${TABLE}.weighted_value ;;
+  # }
 
   dimension: weighted_value_currency {
     type: string
@@ -674,12 +674,460 @@ view: deals_dolar {
       year
     ]
     sql: ${TABLE}.won_time ;;
+
   }
+
+  # --------------------------------------- medidas ----------------------------------------
+
 
   measure: count {
     type: count
     drill_fields: [detail*]
   }
+
+  measure: products_count_average {
+    group_label: "products_count"
+    type: sum
+    sql: ${TABLE}.products_count ;;
+  }
+
+  measure: products_count_sum {
+    group_label: "products_count"
+    type: average
+    sql: ${TABLE}.products_count ;;
+  }
+
+  measure: products_count_max {
+    group_label: "products_count"
+    type: max
+    sql: ${TABLE}.products_count ;;
+  }
+
+  measure: products_count_min {
+    group_label: "products_count"
+    type: min
+    sql: ${TABLE}.products_count ;;
+  }
+
+  measure: files_count_average {
+    group_label: "files_count"
+    type: sum
+    sql: ${TABLE}.files_count ;;
+  }
+
+  measure: files_count_sum {
+    group_label: "files_count"
+    type: average
+    sql: ${TABLE}.files_count ;;
+  }
+
+  measure: files_count_max {
+    group_label: "files_count"
+    type: max
+    sql: ${TABLE}.files_count ;;
+  }
+
+  measure: files_count_min {
+    group_label: "files_count"
+    type: min
+    sql: ${TABLE}.files_count ;;
+  }
+
+  measure: notes_count_average {
+    group_label: "notes_count"
+    type: sum
+    sql: ${TABLE}.notes_count ;;
+  }
+
+  measure: notes_count_sum {
+    group_label: "notes_count"
+    type: average
+    sql: ${TABLE}.notes_count ;;
+  }
+
+  measure: notes_count_max {
+    group_label: "notes_count"
+    type: max
+    sql: ${TABLE}.notes_count ;;
+  }
+
+  measure: notes_count_min {
+    group_label: "notes_count"
+    type: min
+    sql: ${TABLE}.notes_count ;;
+  }
+
+  measure: followers_count_average {
+    group_label: "followers_count"
+    type: sum
+    sql: ${TABLE}.followers_count ;;
+  }
+
+  measure: followers_count_sum {
+    group_label: "followers_count"
+    type: average
+    sql: ${TABLE}.followers_count ;;
+  }
+
+  measure: followers_count_max {
+    group_label: "followers_count"
+    type: max
+    sql: ${TABLE}.followers_count ;;
+  }
+
+  measure: followers_count_min {
+    group_label: "followers_count"
+    type: min
+    sql: ${TABLE}.followers_count ;;
+  }
+
+  measure: email_messages_count_average {
+    group_label: "email_messages_count"
+    type: sum
+    sql: ${TABLE}.followers_count ;;
+  }
+
+  measure: email_messages_count_sum {
+    group_label: "email_messages_count"
+    type: average
+    sql: ${TABLE}.followers_count ;;
+  }
+
+  measure: email_messages_count_max {
+    group_label: "email_messages_count"
+    type: max
+    sql: ${TABLE}.followers_count ;;
+  }
+
+  measure: email_messages_count_min {
+    group_label: "email_messages_count"
+    type: min
+    sql: ${TABLE}.followers_count ;;
+  }
+
+  measure: activities_count_average {
+    group_label: "activities_count"
+    type: sum
+    sql: ${TABLE}.activities_count ;;
+  }
+
+  measure: activities_count_sum {
+    group_label: "email_messages_count"
+    type: average
+    sql: ${TABLE}.activities_count ;;
+  }
+
+  measure: activities_count_max {
+    group_label: "activities_count"
+    type: max
+    sql: ${TABLE}.activities_count ;;
+  }
+
+  measure: activities_count_min {
+    group_label: "activities_count"
+    type: min
+    sql: ${TABLE}.activities_count ;;
+  }
+
+  measure: done_activities_count_average {
+    group_label: "done_activities_count"
+    type: sum
+    sql: ${TABLE}.done_activities_count ;;
+  }
+
+  measure: done_activities_count_sum {
+    group_label: "done_activities_count"
+    type: average
+    sql: ${TABLE}.done_activities_count ;;
+  }
+
+  measure: done_activities_count_max {
+    group_label: "done_activities_count"
+    type: max
+    sql: ${TABLE}.done_activities_count ;;
+  }
+
+  measure: done_activities_count_min {
+    group_label: "done_activities_count"
+    type: min
+    sql: ${TABLE}.done_activities_count ;;
+  }
+
+  measure: undone_activities_count_average {
+    group_label: "undone_activities_count"
+    type: sum
+    sql: ${TABLE}.undone_activities_count ;;
+  }
+
+  measure: undone_activities_count_sum {
+    group_label: "undone_activities_count"
+    type: average
+    sql: ${TABLE}.undone_activities_count ;;
+  }
+
+  measure: undone_activities_count_max {
+    group_label: "undone_activities_count"
+    type: max
+    sql: ${TABLE}.undone_activities_count ;;
+  }
+
+  measure: undone_activities_count_min {
+    group_label: "undone_activities_count"
+    type: min
+    sql: ${TABLE}.undone_activities_count ;;
+  }
+
+  measure: participants_count_average {
+    group_label: "participants_count"
+    type: sum
+    sql: ${TABLE}.participants_count ;;
+  }
+
+  measure: participants_count_sum {
+    group_label: "participants_count"
+    type: average
+    sql: ${TABLE}.participants_count ;;
+  }
+
+  measure: participants_count_max {
+    group_label: "participants_count"
+    type: max
+    sql: ${TABLE}.participants_count ;;
+  }
+
+  measure: participants_count_min {
+    group_label: "participants_count"
+    type: min
+    sql: ${TABLE}.participants_count ;;
+  }
+
+  measure: weighted_value_average {
+    group_label: "weighted_value"
+    type: sum
+    sql: ${TABLE}.weighted_value ;;
+    value_format: "$#.00;($#.00)"
+  }
+
+  measure: weighted_value_sum {
+    group_label: "weighted_value"
+    type: average
+    sql: ${TABLE}.weighted_value ;;
+    value_format: "$#.00;($#.00)"
+  }
+
+  measure: weighted_value_max {
+    group_label: "participants_count"
+    type: max
+    sql: ${TABLE}.participants_count ;;
+    value_format: "$#.00;($#.00)"
+  }
+
+  measure: weighted_value_min {
+    group_label: "weighted_value"
+    type: min
+    sql: ${TABLE}.weighted_value ;;
+    value_format: "$#.00;($#.00)"
+  }
+
+  measure: value_average {
+    group_label: "value"
+    type: sum
+    sql: ${TABLE}.value ;;
+  }
+
+  measure: value_sum {
+    group_label: "value"
+    type: average
+    sql: ${TABLE}.value ;;
+  }
+
+  measure: value_max {
+    group_label: "value"
+    type: max
+    sql: ${TABLE}.value ;;
+  }
+
+  measure: value_min {
+    group_label: "value"
+    type: min
+    sql: ${TABLE}.value ;;
+  }
+
+  measure: valor_normatizado_average {
+    group_label: "valor_normatizado"
+    type: sum
+    sql: ${TABLE}.valor_normatizado ;;
+  }
+
+  measure: valor_normatizado_sum {
+    group_label: "valor_normatizado"
+    type: average
+    sql: ${TABLE}.valor_normatizado ;;
+  }
+
+  measure: valor_normatizado_max {
+    group_label: "valor_normatizado"
+    type: max
+    sql: ${TABLE}.valor_normatizado ;;
+  }
+
+  measure: valor_normatizado_min {
+    group_label: "valor_normatizado"
+    type: min
+    sql: ${TABLE}.valor_normatizado ;;
+  }
+
+  measure: org_open_deals_count_average {
+    group_label: "org_open_deals_count"
+    type: sum
+    sql: ${TABLE}.org_open_deals_count ;;
+  }
+
+  measure: org_open_deals_count_sum {
+    group_label: "org_open_deals_count"
+    type: average
+    sql: ${TABLE}.org_open_deals_count ;;
+  }
+
+  measure: org_open_deals_count_max {
+    group_label: "org_open_deals_count"
+    type: max
+    sql: ${TABLE}.org_open_deals_count ;;
+  }
+
+  measure: org_open_deals_count_min {
+    group_label: "org_open_deals_count"
+    type: min
+    sql: ${TABLE}.org_open_deals_count ;;
+  }
+
+  measure: org_closed_deals_count_average {
+    group_label: "org_closed_deals_count"
+    type: sum
+    sql: ${TABLE}.org_closed_deals_count ;;
+  }
+
+  measure: org_closed_deals_count_sum {
+    group_label: "org_closed_deals_count"
+    type: average
+    sql: ${TABLE}.org_closed_deals_count ;;
+  }
+
+  measure: org_closed_deals_count_max {
+    group_label: "org_closed_deals_count"
+    type: max
+    sql: ${TABLE}.org_closed_deals_count ;;
+  }
+
+  measure: org_closed_deals_count_min {
+    group_label: "org_closed_deals_count"
+    type: min
+    sql: ${TABLE}.org_closed_deals_count ;;
+  }
+
+  measure: org_people_count_average {
+    group_label: "org_people_count"
+    type: sum
+    sql: ${TABLE}.org_people_count ;;
+  }
+
+  measure: org_people_count_sum {
+    group_label: "org_people_count"
+    type: average
+    sql: ${TABLE}.org_people_count ;;
+  }
+
+  measure: org_people_count_max {
+    group_label: "org_people_count"
+    type: max
+    sql: ${TABLE}.org_people_count ;;
+  }
+
+  measure: org_people_count_min {
+    group_label: "org_people_count"
+    type: min
+    sql: ${TABLE}.org_people_count ;;
+  }
+
+  measure: org_done_activities_count_average {
+    group_label: "org_done_activities_count"
+    type: sum
+    sql: ${TABLE}.org_done_activities_count ;;
+  }
+
+  measure: org_done_activities_count_sum {
+    group_label: "org_done_activities_count"
+    type: average
+    sql: ${TABLE}.org_done_activities_count ;;
+  }
+
+  measure: org_done_activities_count_max {
+    group_label: "org_done_activities_count"
+    type: max
+    sql: ${TABLE}.org_done_activities_count ;;
+  }
+
+  measure: org_done_activities_count_min {
+    group_label: "org_done_activities_count"
+    type: min
+    sql: ${TABLE}.org_done_activities_count ;;
+  }
+
+  measure: org_won_deals_count_average {
+    group_label: "org_won_deals_count"
+    type: sum
+    sql: ${TABLE}.org_won_deals_count ;;
+  }
+
+  measure: org_won_deals_count_sum {
+    group_label: "org_won_deals_count"
+    type: average
+    sql: ${TABLE}.org_won_deals_count ;;
+  }
+
+  measure: org_won_deals_count_max {
+    group_label: "org_won_deals_count"
+    type: max
+    sql: ${TABLE}.org_won_deals_count ;;
+  }
+
+  measure: org_won_deals_count_min {
+    group_label: "org_won_deals_count"
+    type: min
+    sql: ${TABLE}.org_won_deals_count ;;
+  }
+
+  measure: org_lost_deals_count_average {
+    group_label: "org_lost_deals_count"
+    type: sum
+    sql: ${TABLE}.org_lost_deals_count ;;
+  }
+
+  measure: org_lost_deals_count_sum {
+    group_label: "org_lost_deals_count"
+    type: average
+    sql: ${TABLE}.org_lost_deals_count ;;
+  }
+
+  measure: org_lost_deals_count_max {
+    group_label: "org_lost_deals_count"
+    type: max
+    sql: ${TABLE}.org_lost_deals_count ;;
+  }
+
+  measure: org_lost_deals_count_min {
+    group_label: "org_lost_deals_count"
+    type: min
+    sql: ${TABLE}.org_lost_deals_count ;;
+  }
+
+  # measure: avg_order {
+  #   type: average
+  #   sql: ${sales_price} ;;
+  #   value_format_name: usd
+  # }
+
+  #org_done_activities_count
 
   # ----- Sets of fields for drilling ------
   set: detail {
