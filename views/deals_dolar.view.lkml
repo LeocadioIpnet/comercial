@@ -687,13 +687,13 @@ view: deals_dolar {
 
   measure: products_count_average {
     group_label: "products_count"
-    type: sum
+    type: average
     sql: ${TABLE}.products_count ;;
   }
 
   measure: products_count_sum {
     group_label: "products_count"
-    type: average
+    type: sum
     sql: ${TABLE}.products_count ;;
   }
 
@@ -711,13 +711,13 @@ view: deals_dolar {
 
   measure: files_count_average {
     group_label: "files_count"
-    type: sum
+    type: average
     sql: ${TABLE}.files_count ;;
   }
 
   measure: files_count_sum {
     group_label: "files_count"
-    type: average
+    type: sum
     sql: ${TABLE}.files_count ;;
   }
 
@@ -735,13 +735,13 @@ view: deals_dolar {
 
   measure: notes_count_average {
     group_label: "notes_count"
-    type: sum
+    type: average
     sql: ${TABLE}.notes_count ;;
   }
 
   measure: notes_count_sum {
     group_label: "notes_count"
-    type: average
+    type: sum
     sql: ${TABLE}.notes_count ;;
   }
 
@@ -759,13 +759,13 @@ view: deals_dolar {
 
   measure: followers_count_average {
     group_label: "followers_count"
-    type: sum
+    type: average
     sql: ${TABLE}.followers_count ;;
   }
 
   measure: followers_count_sum {
     group_label: "followers_count"
-    type: average
+    type: sum
     sql: ${TABLE}.followers_count ;;
   }
 
@@ -783,13 +783,13 @@ view: deals_dolar {
 
   measure: email_messages_count_average {
     group_label: "email_messages_count"
-    type: sum
+    type: average
     sql: ${TABLE}.followers_count ;;
   }
 
   measure: email_messages_count_sum {
     group_label: "email_messages_count"
-    type: average
+    type: sum
     sql: ${TABLE}.followers_count ;;
   }
 
@@ -807,13 +807,13 @@ view: deals_dolar {
 
   measure: activities_count_average {
     group_label: "activities_count"
-    type: sum
+    type: average
     sql: ${TABLE}.activities_count ;;
   }
 
   measure: activities_count_sum {
     group_label: "email_messages_count"
-    type: average
+    type: sum
     sql: ${TABLE}.activities_count ;;
   }
 
@@ -831,13 +831,13 @@ view: deals_dolar {
 
   measure: done_activities_count_average {
     group_label: "done_activities_count"
-    type: sum
+    type: average
     sql: ${TABLE}.done_activities_count ;;
   }
 
   measure: done_activities_count_sum {
     group_label: "done_activities_count"
-    type: average
+    type: sum
     sql: ${TABLE}.done_activities_count ;;
   }
 
@@ -855,13 +855,13 @@ view: deals_dolar {
 
   measure: undone_activities_count_average {
     group_label: "undone_activities_count"
-    type: sum
+    type: average
     sql: ${TABLE}.undone_activities_count ;;
   }
 
   measure: undone_activities_count_sum {
     group_label: "undone_activities_count"
-    type: average
+    type: sum
     sql: ${TABLE}.undone_activities_count ;;
   }
 
@@ -879,13 +879,13 @@ view: deals_dolar {
 
   measure: participants_count_average {
     group_label: "participants_count"
-    type: sum
+    type: average
     sql: ${TABLE}.participants_count ;;
   }
 
   measure: participants_count_sum {
     group_label: "participants_count"
-    type: average
+    type: sum
     sql: ${TABLE}.participants_count ;;
   }
 
@@ -903,17 +903,18 @@ view: deals_dolar {
 
   measure: weighted_value_average {
     group_label: "weighted_value"
-    type: sum
+    type: average
     sql: ${TABLE}.weighted_value ;;
     value_format: "$#.00;($#.00)"
   }
 
   measure: weighted_value_sum {
     group_label: "weighted_value"
-    type: average
+    type: sum
     sql: ${TABLE}.weighted_value ;;
     value_format: "$#.00;($#.00)"
   }
+
 
   measure: weighted_value_max {
     group_label: "participants_count"
@@ -931,61 +932,68 @@ view: deals_dolar {
 
   measure: value_average {
     group_label: "value"
-    type: sum
+    type: average
     sql: ${TABLE}.value ;;
   }
 
   measure: value_sum {
     group_label: "value"
-    type: average
+    type: sum
     sql: ${TABLE}.value ;;
+    value_format: "$#.00;($#.00)"
   }
 
   measure: value_max {
     group_label: "value"
     type: max
     sql: ${TABLE}.value ;;
+    value_format: "$#.00;($#.00)"
   }
 
   measure: value_min {
     group_label: "value"
     type: min
     sql: ${TABLE}.value ;;
+    value_format: "$#.00;($#.00)"
   }
 
   measure: valor_normatizado_average {
     group_label: "valor_normatizado"
-    type: sum
+    type: average
     sql: ${TABLE}.valor_normatizado ;;
+    value_format: "$#.00;($#.00)"
   }
 
   measure: valor_normatizado_sum {
     group_label: "valor_normatizado"
-    type: average
+    type: sum
     sql: ${TABLE}.valor_normatizado ;;
+    value_format: "$#.00;($#.00)"
   }
 
   measure: valor_normatizado_max {
     group_label: "valor_normatizado"
     type: max
     sql: ${TABLE}.valor_normatizado ;;
+    value_format: "$#.00;($#.00)"
   }
 
   measure: valor_normatizado_min {
     group_label: "valor_normatizado"
     type: min
     sql: ${TABLE}.valor_normatizado ;;
+    value_format: "$#.00;($#.00)"
   }
 
   measure: org_open_deals_count_average {
     group_label: "org_open_deals_count"
-    type: sum
+    type: average
     sql: ${TABLE}.org_open_deals_count ;;
   }
 
   measure: org_open_deals_count_sum {
     group_label: "org_open_deals_count"
-    type: average
+    type: sum
     sql: ${TABLE}.org_open_deals_count ;;
   }
 
@@ -1003,13 +1011,13 @@ view: deals_dolar {
 
   measure: org_closed_deals_count_average {
     group_label: "org_closed_deals_count"
-    type: sum
+    type: average
     sql: ${TABLE}.org_closed_deals_count ;;
   }
 
   measure: org_closed_deals_count_sum {
     group_label: "org_closed_deals_count"
-    type: average
+    type: sum
     sql: ${TABLE}.org_closed_deals_count ;;
   }
 
@@ -1027,13 +1035,13 @@ view: deals_dolar {
 
   measure: org_people_count_average {
     group_label: "org_people_count"
-    type: sum
+    type: average
     sql: ${TABLE}.org_people_count ;;
   }
 
   measure: org_people_count_sum {
     group_label: "org_people_count"
-    type: average
+    type: sum
     sql: ${TABLE}.org_people_count ;;
   }
 
@@ -1051,13 +1059,13 @@ view: deals_dolar {
 
   measure: org_done_activities_count_average {
     group_label: "org_done_activities_count"
-    type: sum
+    type: average
     sql: ${TABLE}.org_done_activities_count ;;
   }
 
   measure: org_done_activities_count_sum {
     group_label: "org_done_activities_count"
-    type: average
+    type: sum
     sql: ${TABLE}.org_done_activities_count ;;
   }
 
@@ -1075,13 +1083,13 @@ view: deals_dolar {
 
   measure: org_won_deals_count_average {
     group_label: "org_won_deals_count"
-    type: sum
+    type: average
     sql: ${TABLE}.org_won_deals_count ;;
   }
 
   measure: org_won_deals_count_sum {
     group_label: "org_won_deals_count"
-    type: average
+    type: sum
     sql: ${TABLE}.org_won_deals_count ;;
   }
 
@@ -1099,13 +1107,13 @@ view: deals_dolar {
 
   measure: org_lost_deals_count_average {
     group_label: "org_lost_deals_count"
-    type: sum
+    type: average
     sql: ${TABLE}.org_lost_deals_count ;;
   }
 
   measure: org_lost_deals_count_sum {
     group_label: "org_lost_deals_count"
-    type: average
+    type: sum
     sql: ${TABLE}.org_lost_deals_count ;;
   }
 
