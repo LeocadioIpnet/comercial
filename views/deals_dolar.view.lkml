@@ -940,7 +940,7 @@ view: deals_dolar {
     group_label: "value"
     type: sum
     sql: ${TABLE}.value ;;
-    value_format: "$#.00;($#.00)"
+    value_format: "0,, \"Mil\""
   }
 
   measure: value_max {
