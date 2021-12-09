@@ -934,7 +934,7 @@ view: deals_dolar {
     group_label: "value"
     type: average
     sql: ${TABLE}.value ;;
-    value_format: "\" R$ \"0,, \"m\""
+    value_format: "\" R$ \"0.00"
   }
 
   measure: value_sum {
