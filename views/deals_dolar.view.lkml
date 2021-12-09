@@ -905,7 +905,7 @@ view: deals_dolar {
     group_label: "weighted_value"
     type: average
     sql: ${TABLE}.weighted_value ;;
-    value_format: "\" R$ \"0,, \"M\""
+    value_format: "\" R$ \"0,, \"m\""
   }
 
   measure: weighted_value_sum {
@@ -934,13 +934,14 @@ view: deals_dolar {
     group_label: "value"
     type: average
     sql: ${TABLE}.value ;;
+    value_format: "\" R$ \"0,, \"m\""
   }
 
   measure: value_sum {
     group_label: "value"
     type: sum
     sql: ${TABLE}.value ;;
-    value_format: "\" R$ \"\" R$ \"0,, \"M\""
+    value_format: "\" R$ \"0,, \"M\""
   }
 
   measure: value_max {
@@ -961,7 +962,7 @@ view: deals_dolar {
     group_label: "valor_normatizado"
     type: average
     sql: ${TABLE}.valor_normatizado ;;
-    value_format: "\" R$ \"0,, \"M\""
+    value_format: "\" R$ \"0,, \"m\""
   }
 
   measure: valor_normatizado_sum {
