@@ -905,14 +905,14 @@ view: deals_dolar {
     group_label: "weighted_value"
     type: average
     sql: ${TABLE}.weighted_value ;;
-    value_format: "0,, \"M\""
+    value_format: "\" R$ \"0,, \"M\""
   }
 
   measure: weighted_value_sum {
     group_label: "weighted_value"
     type: sum
     sql: ${TABLE}.weighted_value ;;
-    value_format: "0,, \"M\""
+    value_format: "\" R$ \"0,, \"M\""
   }
 
 
@@ -920,14 +920,14 @@ view: deals_dolar {
     group_label: "participants_count"
     type: max
     sql: ${TABLE}.participants_count ;;
-    value_format: "0,, \"M\""
+    value_format: "\" R$ \"0,, \"M\""
   }
 
   measure: weighted_value_min {
     group_label: "weighted_value"
     type: min
     sql: ${TABLE}.weighted_value ;;
-    value_format: "0,, \"M\""
+    value_format: "\" R$ \"0,, \"M\""
   }
 
   measure: value_average {
@@ -940,49 +940,49 @@ view: deals_dolar {
     group_label: "value"
     type: sum
     sql: ${TABLE}.value ;;
-    value_format: "\" String\"0,, \"M\""
+    value_format: "\" R$ \"\" R$ \"0,, \"M\""
   }
 
   measure: value_max {
     group_label: "value"
     type: max
     sql: ${TABLE}.value ;;
-    value_format: "0,, \"M\""
+    value_format: "\" R$ \"0,, \"M\""
   }
 
   measure: value_min {
     group_label: "value"
     type: min
     sql: ${TABLE}.value ;;
-    value_format: "0,, \"M\""
+    value_format: "\" R$ \"0,, \"M\""
   }
 
   measure: valor_normatizado_average {
     group_label: "valor_normatizado"
     type: average
     sql: ${TABLE}.valor_normatizado ;;
-    value_format: "0,, \"M\""
+    value_format: "\" R$ \"0,, \"M\""
   }
 
   measure: valor_normatizado_sum {
     group_label: "valor_normatizado"
     type: sum
     sql: ${TABLE}.valor_normatizado ;;
-    value_format: "0,, \"M\""
+    value_format: "\" R$ \"0,, \"M\""
   }
 
   measure: valor_normatizado_max {
     group_label: "valor_normatizado"
     type: max
     sql: ${TABLE}.valor_normatizado ;;
-    value_format: "0,, \"M\""
+    value_format: "\" R$ \"0,, \"M\""
   }
 
   measure: valor_normatizado_min {
     group_label: "valor_normatizado"
     type: min
     sql: ${TABLE}.valor_normatizado ;;
-    value_format: "0,, \"M\""
+    value_format: "\" R$ \"0,, \"M\""
   }
 
   measure: org_open_deals_count_average {
