@@ -77,20 +77,25 @@ view: sc_venda_dash {
     sql: ${TABLE}.DataDolar ;;
   }
 
-  dimension_group: data_venda_apuracao {
-    type: time
-    timeframes: [
-      raw,
-      date,
-      week,
-      month,
-      quarter,
-      year
-    ]
-    convert_tz: no
-    datatype: date
+  dimension: data_venda_apuracao {
+    type: date
     sql: ${TABLE}.DataVendaApuracao ;;
   }
+
+  # dimension_group: data_venda_apuracao {
+  #   type: time
+  #   timeframes: [
+  #     raw,
+  #     date,
+  #     week,
+  #     month,
+  #     quarter,
+  #     year
+  #   ]
+  #   convert_tz: no
+  #   datatype: date
+  #   sql: ${TABLE}.DataVendaApuracao ;;
+  # }
 
   # dimension: data_inicio {
   #   type: string
