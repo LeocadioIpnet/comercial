@@ -197,15 +197,15 @@ view: sc_venda_dash {
   #   sql: ${TABLE}.DataVencimento ;;
   # }
 
-  dimension: data_vencimento {
-    type: date
-    sql: ${TABLE}.DataVencimento ;;
-  }
+  # dimension: data_vencimento {
+  #   type: date
+  #   sql: ${TABLE}.DataVencimento ;;
+  # }
 
-  dimension: data_vencimento_quarter {
-    type:date_quarter_of_year
-    sql: ${TABLE}.DataVencimento ;;
-  }
+  # dimension: data_vencimento_quarter {
+  #   type:date_quarter_of_year
+  #   sql: ${TABLE}.DataVencimento ;;
+  # }
 
   # dimension_group: data_venda {
   #   type: time
