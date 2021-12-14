@@ -82,6 +82,11 @@ view: sc_venda_dash {
     sql: ${TABLE}.DataVendaApuracao ;;
   }
 
+  dimension: data_venda_apuracao_quarter {
+    type:date_quarter_of_year
+    sql: ${TABLE}.DataVendaApuracao ;;
+  }
+
   # dimension_group: data_venda_apuracao {
   #   type: time
   #   timeframes: [
@@ -102,78 +107,128 @@ view: sc_venda_dash {
   #   sql: ${TABLE}.DataInicio ;;
   # }
 
-  dimension_group: data_inicio {
-    type: time
-    timeframes: [
-      raw,
-      date,
-      week,
-      month,
-      quarter,
-      year
-    ]
-    convert_tz: no
-    datatype: date
+  # dimension_group: data_inicio {
+  #   type: time
+  #   timeframes: [
+  #     raw,
+  #     date,
+  #     week,
+  #     month,
+  #     quarter,
+  #     year
+  #   ]
+  #   convert_tz: no
+  #   datatype: date
+  #   sql: ${TABLE}.DataInicio ;;
+  # }
+
+  dimension: data_inicio {
+    type: date
     sql: ${TABLE}.DataInicio ;;
   }
 
-  dimension_group: data_termino {
-    type: time
-    timeframes: [
-      raw,
-      date,
-      week,
-      month,
-      quarter,
-      year
-    ]
-    convert_tz: no
-    datatype: date
+  dimension: data_inicio_quarter {
+    type:date_quarter_of_year
+    sql: ${TABLE}.DataInicio ;;
+  }
+
+  # dimension_group: data_termino {
+  #   type: time
+  #   timeframes: [
+  #     raw,
+  #     date,
+  #     week,
+  #     month,
+  #     quarter,
+  #     year
+  #   ]
+  #   convert_tz: no
+  #   datatype: date
+  #   sql: ${TABLE}.DataTermino ;;
+  # }
+
+  dimension: data_termino {
+    type: date
     sql: ${TABLE}.DataTermino ;;
   }
 
-  dimension_group: data_truncada {
-    type: time
-    timeframes: [
-      raw,
-      date,
-      week,
-      month,
-      quarter,
-      year
-    ]
-    convert_tz: no
-    datatype: date
+  dimension: data_termino_quarter {
+    type:date_quarter_of_year
+    sql: ${TABLE}.DataTermino ;;
+  }
+
+  # dimension_group: data_truncada {
+  #   type: time
+  #   timeframes: [
+  #     raw,
+  #     date,
+  #     week,
+  #     month,
+  #     quarter,
+  #     year
+  #   ]
+  #   convert_tz: no
+  #   datatype: date
+  #   sql: ${TABLE}.DataTruncada ;;
+  # }
+
+  dimension: data_truncada {
+    type: date
     sql: ${TABLE}.DataTruncada ;;
   }
 
-  dimension_group: data_vencimento {
-    type: time
-    timeframes: [
-      raw,
-      date,
-      week,
-      month,
-      quarter,
-      year
-    ]
-    convert_tz: no
-    datatype: date
+  dimension: data_truncada_quarter {
+    type:date_quarter_of_year
+    sql: ${TABLE}.DataTruncada ;;
+  }
+
+  # dimension_group: data_vencimento {
+  #   type: time
+  #   timeframes: [
+  #     raw,
+  #     date,
+  #     week,
+  #     month,
+  #     quarter,
+  #     year
+  #   ]
+  #   convert_tz: no
+  #   datatype: date
+  #   sql: ${TABLE}.DataVencimento ;;
+  # }
+
+  dimension: data_vencimento {
+    type: date
     sql: ${TABLE}.DataVencimento ;;
   }
 
-  dimension_group: data_venda {
-    type: time
-    timeframes: [
-      raw,
-      date,
-      week,
-      month,
-      quarter,
-      year
-    ]
-    convert_tz: no
-    datatype: date
+  dimension: data_vencimento_quarter {
+    type:date_quarter_of_year
+    sql: ${TABLE}.DataVencimento ;;
+  }
+
+  # dimension_group: data_venda {
+  #   type: time
+  #   timeframes: [
+  #     raw,
+  #     date,
+  #     week,
+  #     month,
+  #     quarter,
+  #     year
+  #   ]
+  #   convert_tz: no
+  #   datatype: date
+  #   sql: ${TABLE}.DataVenda ;;
+  # }
+
+  dimension: data_venda {
+    type: date
+    sql: ${TABLE}.DataVenda ;;
+  }
+
+  dimension: data_venda_quarter {
+    type:date_quarter_of_year
     sql: ${TABLE}.DataVenda ;;
   }
 
