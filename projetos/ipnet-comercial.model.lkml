@@ -11,6 +11,7 @@ explore: deals {
 
   from: deals_dolar
 
+
   join: activities_view {
     relationship: one_to_many
     sql_on: ${deals.id} = ${activities_view.deal_id} ;;
