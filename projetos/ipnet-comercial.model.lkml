@@ -36,6 +36,8 @@ explore: activities {
 
 explore: sc_venda_dash {from: sc_venda_dash}
 
+
+
 # explore: deals_dolar {
 #   join: activities {
 #     relationship: one_to_many

@@ -941,7 +941,7 @@ view: deals_dolar {
     group_label: "value"
     type: sum
     sql: ${TABLE}.value ;;
-    value_format: "\" R$ \"0,, \"M\""
+    value_format: "[>=1000000]\R\$0.00,,\"M\";[>=1000]\R\$0.00,\"K\";\R\$0.00"
   }
 
   measure: value_max {
